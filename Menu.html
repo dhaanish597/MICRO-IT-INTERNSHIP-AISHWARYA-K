@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body{
+            background:url("D:\table.png");
+        }
+        .sub-heading{
+            text-align: center;
+            color:red;
+            font-size: 3rem;
+            padding-top: 1rem;
+
+        }
+        .heading{
+            text-align: center;
+            color:black;
+            font-size: 3rem;
+            padding-bottom: 2rem;
+            text-transform:uppercase;
+            
+        }
+        .btn{
+                margin-top: 1rem;
+                display: inline-block;
+                font-size: 1.7rem;
+                color:#fff;
+                background:red;
+                border-radius:.5rem;
+                cursor: pointer;
+                padding:.8rem 3rem;
+                text-decoration:none;
+            }
+
+            .btn:hover{
+                background: red;
+                letter-spacing: .1rem;
+            }
+
+            .menu .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+            gap:1.5rem;
+
+            }
+
+            .menu .box-container .box{
+                background: #fff;
+                border: 1rem solid rgba(0,0,0,.2);
+                border-radius:.5rem;
+                box-shadow:20px;
+                padding-left:0;
+                padding-right:35px;
+                background:url("D:\grey.jpg.png");
+
+            }
+
+            .menu .box-container .box .image{
+                height: 25rem;
+                width:100%;
+                padding:1.5rem;
+                overflow: hidden;
+                position: relative;
+
+            }
+
+            .menu .box-container .box .image img{
+                height:100%;
+                width:100%;
+                border-radius:.5rem;
+                object-fit:cover;
+
+            }
+
+            .menu .box-container .box .image .fa-heart{
+                position: absolute;
+                top:2.5rem;
+                right:2.5rem;
+                height:5rem;
+                width:5rem;
+                line-height:5rem;
+                text-align:center;
+                font-size:2rem;
+                background:#fff;
+                border-radius:50%;
+                color:black;
+                text-decoration:none;
+            }
+
+            .menu .box-container .box .image .fa-heart:hover{
+                background-color:red;
+                color:#fff;
+            }
+
+            .menu .box-container .box .content{
+                padding:2rem;
+                padding-top:0;
+            }
+
+            .menu .box-container .box .stars{
+                padding-bottom:1rem;
+
+            }
+
+            .menu .box-container .box .stars i{
+                padding-bottom:1rem;
+                font-size:1.7rem;
+                color:gold;
+                
+            }
+
+            .menu .box-container .box .content h3{
+                color:white;
+                font-size:2.5rem;
+            }
+
+            .menu .box-container .box .content p{
+                color:white;
+                font-size:1.6rem;
+                padding:.5rem 0;
+                line-height:1.5;
+            }
+
+            .menu .box-container .box .content .pice{
+                color:red;
+                margin-left:1rem;
+                font-size:2.5rem;
+            }
+
+            .pice .box-container .box span{
+            color:red;
+            font-weight:bolder;
+            margin-right:1rem;
+            font-size: 2.5rem;
+        }
+                
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section class="menu" id="menu">
+        <h3 class="sub-heading">Our menu</h3>
+        <h1 class="heading">Today's Special</h1>
+
+        <div class="box-container">
+            
+            <div class="box">
+                <div class="image">
+                    <img src="https://assets.architecturaldigest.in/photos/600849631dd783c692024e30/master/w_1600%2Cc_limit/Mumbai-Best-Biryani-Awadhi-gosht-chap-biryani-at-Ummrao.jpg" alt="" >
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                    <h3>Biriyani</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure aliquam cum sint officia, voluptatum inventore illum. Non, vitae dolorum!</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="pice">$12.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://biryanibowlwa.com/wp-content/uploads/2021/04/Butter-Chicken-Curry-1.jpg">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                    <h3>Butter Chicken Masala</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure aliquam cum sint officia, voluptatum inventore illum. Non, vitae dolorum!</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="pice">$12.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://i.pinimg.com/736x/17/ef/51/17ef51c3e2051c8856914f189d124a2f.jpg" alt="" width="500px" height="500px">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                    <h3>Chilli Paneer</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure aliquam cum sint officia, voluptatum inventore illum. Non, vitae dolorum!</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="pice">$12.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://recipes.net/wp-content/uploads/2022/05/shawarma.jpg" alt="" width="500px" height="500px">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                    <h3>Shawarma</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure aliquam cum sint officia, voluptatum inventore illum. Non, vitae dolorum!</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="pice">$12.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.uUb150RhXnegAQBRLIT3FgHaD4&pid=Api&P=0&h=180" alt="" width="500px" height="500px">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                    <h3>Bamboo Biriyani</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure aliquam cum sint officia, voluptatum inventore illum. Non, vitae dolorum!</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="pice">$12.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://pipingpotcurry.com/wp-content/uploads/2017/03/Vegetable-Sambar-Instant-Pot-Piping-Pot-Curry.jpg" alt="" width="500px" height="500px">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                    <h3>Idli with Sambar</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure aliquam cum sint officia, voluptatum inventore illum. Non, vitae dolorum!</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="pice">$12.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://hungryforever.net/wp-content/uploads/2015/04/Featured-image-Dosas-in-Chennai.jpg" alt="" width="500px" height="500px">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                    <h3>Dosa with Sambar</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure aliquam cum sint officia, voluptatum inventore illum. Non, vitae dolorum!</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="pice">$12.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://wallpaperaccess.com/full/1279331.jpg" alt="" width="500px" height="500px">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                    <h3>Ice Cream</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure aliquam cum sint officia, voluptatum inventore illum. Non, vitae dolorum!</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\Mini Project.html" class="btn">Go to Home</a>
+                    <span class="pice">$12.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://images8.alphacoders.com/107/thumb-1920-1072808.jpg" alt="" width="500px" height="500px">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                    <h3>Creamy Cup Cakes</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure aliquam cum sint officia, voluptatum inventore illum. Non, vitae dolorum!</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="pice">$12.99</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>

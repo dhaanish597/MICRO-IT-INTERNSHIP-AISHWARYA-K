@@ -1,0 +1,155 @@
+ <html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <title>Home</title>
+        <style>
+            
+            section{
+                padding: 2rem 9%;
+                background:url("D:\grey.jpg.png");
+            }
+
+            section:nth-child(even){
+                background:#eee;
+            }
+
+            .home .home-slider .slide{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 2rem;
+                padding-top:9rem;
+            }
+
+            .home .home-slider .slide .content{
+                flex: 1 1 45rem;
+            }
+
+            .home .home-slider .slide .image{
+                flex: 1 1 45rem;
+            }
+
+            .home .home-slider .slide .image img{
+                width: 100%;
+            }
+
+            .home .home-slider .slide .content span{
+                color:red;
+                font-size: 2.5rem;
+            }
+
+            .home .home-slider .slide .content h3{
+                color:white;
+                font-size: 7rem;
+            }
+
+            .home .home-slider .slide .content p{
+                color:darkgray;
+                font-size: 2.2rem;
+                padding: .5rem 0;
+                line-height:1.5;
+            }
+
+            .btn{
+                margin-top: 1rem;
+                display: inline-block;
+                font-size: 1.7rem;
+                color:#fff;
+                background:red;
+                border-radius:.5rem;
+                cursor: pointer;
+                padding:.8rem 3rem;
+                text-decoration:none;
+            }
+
+            .btn:hover{
+                background: red;
+                letter-spacing: .1rem;
+            }
+
+            .swiper-pagination-bullet-active{
+                background:var(--red);
+            }
+
+            .home .home-slider .slide .content h3{
+                font-size: 6rem;
+            }
+
+            
+
+
+
+        </style>
+    </head>
+    <body>
+    <section class="home" id="home">
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Our Special Dish</span>
+                    <h3>Spicy Noodles</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium fugit ducimus nam placeat aspernatur voluptate debitis iste ab unde culpa!</p>
+                    <a href="#" class="btn">Order Now</a>
+                </div>
+                <div class="image">
+                    <img src="https://lindseyeatsla.com/wp-content/uploads/2021/11/LindseyEats_Spicy_Garlic_Noodles-3.jpg" >
+                    
+                </div>
+
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Our Special Dish</span>
+                    <h3>Fried Chicken</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium fugit ducimus nam placeat aspernatur voluptate debitis iste ab unde culpa!</p>
+                    <a href="#" class="btn">Order Now</a>
+                </div>
+                <div class="image">
+                    <img src="https://static.fanpage.it/wp-content/uploads/sites/22/2017/07/crispy-fried-chicken.jpg" >
+                    
+                </div>
+        </div>
+        <div class="swiper-slide slide">
+            <div class="content">
+                <span>Our Special Dish</span>
+                <h3>Hot Pizza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium fugit ducimus nam placeat aspernatur voluptate debitis iste ab unde culpa!</p>
+                <a href="#" class="btn">Order Now</a>
+                <a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\Mini Project.html" class="btn">Go to Home</a>
+            </div>
+            <div class="image">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/671/391/non_2x/pepperoni-pizza-on-the-wooden-board-with-dark-lighting-and-black-background-food-and-delivery-concept-generative-ai-free-photo.jpg" >
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        
+    </div>
+
+ </section>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script>
+    var swiper = new Swiper(".home-slider", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop:true,
+      
+      
+    });
+ </script>
+ 
+ </body>
+ </html>
+
+

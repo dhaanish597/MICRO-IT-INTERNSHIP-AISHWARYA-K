@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dishes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body{
+            background:url("D:\table.png");
+        }
+
+        
+        .sub-heading{
+            text-align: center;
+            color:red;
+            font-size: 3rem;
+            padding-top: 1rem;
+
+        }
+
+        .heading{
+            text-align: center;
+            color:black;
+            font-size: 3rem;
+            padding-bottom: 2rem;
+            text-transform:uppercase;
+            
+        }
+        .btn{
+                margin-top: 1rem;
+                display: inline-block;
+                font-size: 1.7rem;
+                color:#fff;
+                background:red;
+                border-radius:.5rem;
+                cursor: pointer;
+                padding:.8rem 3rem;
+                text-decoration:none;
+            }
+
+            .btn:hover{
+                background: red;
+                letter-spacing: .1rem;
+            }
+
+        .dishes .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+            gap:1.5rem;
+        }
+
+        .dishes .box-container .box{
+            padding:2.5rem;
+            background:#fff;
+            border-radius:.5rem;
+            border:.1rem solid rgba(0,0,0,.2);
+            box-shadow: 25px;
+            position: relative;
+            overflow: hidden;
+            text-align:center;
+            background:url("D:\grey.jpg.png");
+        }
+
+        .dishes .box-container .box .fa-heart,
+        .dishes .box-container .box .fa-eye{
+            position:absolute;
+            top:1.5rem;
+            background:#eee;
+            border-radius:50%;
+            height: 5rem;
+            width:5rem;
+            line-height:5rem;
+            font-size:2rem;
+            color:black;
+            text-decoration:none;
+
+
+        }
+
+        .dishes .box-container .box .fa-heart:hover,
+        .dishes .box-container .box .fa-eye:hover{
+            background:red;
+            color:white;
+        }
+
+        .dishes .box-container .box .fa-heart {
+            right:-15rem;
+        }
+
+        .dishes .box-container .box .fa-eye {
+            left:-15rem;
+        }
+
+        .dishes .box-container .box:hover .fa-heart {
+            right:1.5rem;
+        }
+
+        .dishes .box-container .box:hover .fa-eye {
+            left:1.5rem;
+        }
+
+        .dishes .box-container .box img{
+            height:17rem;
+            margin: 1rem 0;
+        }
+
+        .dishes .box-container .box h3{
+            color:white;
+            font-size:3rem;
+
+        }
+
+        .dishes .box-container .box .stars{
+            padding: 1rem 0;
+            
+            
+        }
+
+        .dishes .box-container .box .stars i{
+            font-size:1.7rem;
+            color:gold;
+        }
+
+        .dishes .box-container .box span{
+            color:red;
+            font-weight:bolder;
+            margin-right:1rem;
+            font-size: 2.5rem;
+        }
+        .dishes .box-container .box img{
+            height:auto;
+            width:90%;
+        }
+
+        
+        
+
+
+
+    </style>
+</head>
+<body>
+    <section class="dishes" id="dishes">
+
+        <h3 class="sub-heading">The Crave Bits</h3>
+        <h1 class="heading">Popular Dishes</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="https://img.freepik.com/premium-photo/picture-paneer-tikka_871710-38296.jpg" height="500px">
+                <h3>Paneer Tikka</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="https://wallpapercave.com/wp/wp10822878.jpg">
+                <h3>Chilli Chicken</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="https://images3.alphacoders.com/876/thumb-1920-876245.jpg">
+                <h3>Chicken Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="https://www.ruchiskitchen.com/wp-content/uploads/2020/12/Paneer-butter-masala-recipe-7-1.jpg.webp">
+                <h3>Naan with Paneer</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="https://global-uploads.webflow.com/60d34b8627f6e735cf28df18/62a95eaacb8d206406f1d296_Chicken%20Lollipop%20Hero%204.3.jpg">
+                <h3>Chicken Lollipop</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a><br><br><br>
+                <a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\Mini Project.html" class="btn">Go to Home</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="https://images5.alphacoders.com/103/thumb-1920-1032965.jpg">
+                <h3>Sandwich</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+</html>

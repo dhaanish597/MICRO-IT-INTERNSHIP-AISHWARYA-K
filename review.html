@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        body{
+            background:url("D:\table.png");
+
+        }
+
+        .btn{
+                margin-top: 1rem;
+                display: inline-block;
+                font-size: 1.7rem;
+                color:#fff;
+                background:red;
+                border-radius:.5rem;
+                cursor: pointer;
+                padding:.8rem 3rem;
+                text-decoration:none;
+            }
+
+            .btn:hover{
+                background: red;
+                letter-spacing: .1rem;
+            }
+
+.sub-heading{
+            text-align: center;
+            color:red;
+            font-size: 3rem;
+            padding-top: 1rem;
+
+        }
+
+        .heading{
+            text-align: center;
+            color:black;
+            font-size: 3rem;
+            padding-bottom: 2rem;
+            text-transform:uppercase;
+            
+        }
+
+        .review .slide{
+            width:800px;
+            height:800px;
+            padding:2rem;
+            box-shadow:25px;
+            border:.1rem solid rgba(0,0,0,0.2);
+            border-radius:.5rem;
+            position:relative;
+            background:url("D:\grey.jpg.png");
+            
+        }
+
+        .review .slide .fa-quote-right{
+            position:absolute;
+            top:2rem;
+            right:2rem;
+            font-size:6rem;
+            color:#ccc;
+        }
+
+        .review .slide .user{
+            display: flex;
+            gap:1.5rem;
+            align-items:center;
+            padding-bottom:1.5rem;
+
+        }
+
+        .review .slide .user img{
+            height: 7rem;
+            width:7rem;
+            border-radius:50%;
+            object-fit:cover;
+        }
+
+        .review .slide .user h3{
+            color:white;
+            font-size:2rem;
+            padding-bottom:.5rem;
+            text-align:center;
+
+        }
+
+        .review .slide .user i{
+            font-size:1.8rem;
+            color:gold;
+        }
+
+        .review .slide p{
+            font-size:3rem;
+            line-height:1.8;
+            color:white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <section class="review" id="review">
+        <h3 class="sub-heading">The Crave Bits<br><br> Customer's Review</h3>
+        <h1 class="heading">What they Say?</h1>
+
+        <script>
+            var swiper = new Swiper(".review-slider", {
+              spaceBetween: 20,
+              centeredSlides: true,
+              autoplay: {
+                delay: 7500,
+                disableOnInteraction: false,
+              },
+              loop:true,
+              breakpoints: {
+                640: {
+                    slidesPerView:1,
+                },
+                640: {
+                    slidesPerView:2,
+                },
+                768: {
+                    slidesPerView:2,
+                },
+                1024:{
+                    slidesPerView:3,
+                },
+              },
+              
+              
+            });
+         </script>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper wrapper" >
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="https://www.wallofcelebrities.com/celebrity/john-doe/pictures/xxlarge/john-doe_862803.jpg" alt="">
+                        <div class="user-info">
+                            <h3>John Deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The food at The Crave Bits was simply exquisite. <br>Every dish was bursting with flavor, and the presentation was beautiful. Highly recommend the chicken tikka masala!"</p>
+                </div>
+
+                <div class="swiper-container review-slider">
+
+                    <div class="swiper-wrapper wrapper">
+        
+                        <div class="swiper-slide slide">
+                            <i class="fas fa-quote-right"></i>
+                            <div class="user">
+                                <img src="https://cdn.lifehack.org/wp-content/uploads/2015/02/what-makes-people-happy.jpeg" alt="" height="500px" width="500px">
+                                <div class="user-info">
+                                    <h3>Riya</h3>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>"The variety of dishes available was impressive. I especially loved the paneer butter masala and the garlic naan. Absolutely delightful!""</p>
+                        </div>
+
+                        <div class="swiper-container review-slider">
+
+                    <div class="swiper-wrapper wrapper">
+        
+                    
+
+                        <div class="swiper-container review-slider">
+
+                            <div class="swiper-wrapper wrapper">
+                
+                                <div class="swiper-slide slide">
+                                    <i class="fas fa-quote-right"></i>
+                                    <div class="user">
+                                        <img src="https://www.imom.com/wp-content/uploads/2023/08/11-1-23-how-to-make-someone-feel-better-over-text.jpg" alt="" height="500px" width="500px">
+                                        <div class="user-info">
+                                            <h3>Esha</h3>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>"Each meal at The Crave Bits was a culinary delight. The chef’s special biryani was the highlight of our stay, and the service was impeccable."</p>
+                                </div>
+
+                                <div class="swiper-container review-slider">
+
+                                    <div class="swiper-wrapper wrapper">
+                        
+                                        <div class="swiper-slide slide">
+                                            <i class="fas fa-quote-right"></i>
+                                            <div class="user">
+                                                <img src="https://www.healthkart.com/connect/wp-content/uploads/2023/07/average-height-in-men-in-india_900.jpg" alt="" height="500px" width="500px">
+                                                <div class="user-info">
+                                                    <h3>Surya</h3>
+                                                    <div class="stars">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>"Had the best dining experience at The Crave Bits. The seafood platter was fresh and delicious, and the desserts were to die for!"</p>
+                                        </div>
+            </div>
+        </div>
+
+        
+    </section>
+    <a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\Mini Project.html" class="btn">Go to Home</a>
+    
+</body>
+</html>

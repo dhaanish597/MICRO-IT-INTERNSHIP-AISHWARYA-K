@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crave Bits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Nunito;
+            text-decoration: none;
+            list-style: none;
+            border:none;
+            text-transform:capitalize;
+            transition:all .2s linear;
+        }
+
+        .btn{
+                margin-top: 1rem;
+                display: inline-block;
+                font-size: 1.5rem;
+                color:#fff;
+                background:red;
+                border-radius:.5rem;
+                cursor: pointer;
+                padding:.8rem 3rem;
+                text-decoration:none;
+                border-radius:25px
+            }
+
+            .btn:hover{
+                background: red;
+                letter-spacing: .1rem;
+            }
+
+        .header{
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            padding:10px 20px;
+            background-color:#fff;
+        }
+
+        html{
+            font-size:62.5;
+            overflow-x:hidden;
+            scroll-padding-top:5.5rem;
+            scroll-behavior:smooth;
+        }
+        :root{
+            --red:red;
+            --white:white;
+            --light-color:#666;
+            --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+        }
+
+        .hero{
+            min-height: 100vh;
+            background: url("https://i.pinimg.com/originals/e8/d8/ee/e8d8ee9edece42916aa5851d7fd7bebd.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+            padding-top: 20px;
+
+        }
+
+        .logo {
+            color:red;
+            font-size: 30px;
+            font-weight: bolder;
+            transition: .3s;
+            padding:20px
+        }
+
+        .logo:hover {
+            transform: translateX(20px);
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+        nav ul li{
+            margin: 0 20px;
+        }
+
+        nav ul li a{
+            font-size: 15px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+
+        nav ul li a.active,
+        nav ul li a:hover {
+            color:white;
+            background:red;
+        }
+        nav button {
+            background: red;
+            border: none;
+            color: #fff;
+            padding: 12px 35px;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 2rem;
+            transition: .3s;
+        }
+
+        nav button:hover{
+            scale: .8;
+        }
+
+        .content{
+            position: absolute;
+            top: 35%;
+            left: 90px;
+
+        }
+        h2{
+            font-size: 50px;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 35px;
+        }
+        p{
+            font-size:18px;
+            margin-top: 10px;
+            color: #eee;
+        }
+
+        .content button{
+            margin-top: 50px;
+            background: red;
+            border: none;
+            color: #fff;
+            padding: 12px 45px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 2rem;
+            transition: .3s;
+        }
+
+        .content button:hover{
+            scale:0.8;
+        }
+        .content button.know_more{
+            background: transparent;
+            border: 2px solid red;
+            color: red;
+            margin-left: 30px;
+        }
+
+        .content button.know_more:hover{
+            background:red;
+            color: #eee;
+        }
+
+        header .icons i,
+        header .icons a{
+            cursor:pointer;
+            margin-right:.5rem;
+            height:4.5rem;
+            line-height:4.5rem;
+            width:4.5rem;
+            
+            text-align:center;
+            font-size:1.7rem;
+            color:black;
+            border-radius:50%;
+            background:url("D:\table.png");
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:20px;
+            position:relative;
+            top:50%;
+            left:20px;
+            
+
+           
+
+        }
+        header .icons i:hover,
+        header .icons a:hover{
+            color:#fff;
+            background:red;
+            transform:rotate(360deg);
+        }
+
+        .header .icons #menu-bars{
+            display:none;
+        }
+
+        @media (max-width:999px){
+            html{
+                font-size:55%;
+            }
+        }
+
+        .footer .box-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+            gap:1.5rem;
+            background:url("D:\grey.jpg.png");
+        }
+            .footer .box-container .box{
+                padding:5rem 0;
+                font-size:2.5rem;
+                color:black;
+                text-align:center;
+                background:url("D:\table.png");
+                border-radius:40px
+                
+
+                
+
+
+            }
+
+            .footer .box-container .box h3{
+                padding:.5rem 0;
+                font-size:2.5rem;
+                color:black;
+            }
+
+            .footer .box-container .box a{
+                display:block;
+                padding:.5rem 0;
+                font-size:1.5rem;
+                color:darkred;
+                font-weight:bolder;
+            }
+
+            .footer .box-container .box a:hover{
+                color:red;
+                text-decoration:underline;
+            }
+
+            .footer .credit{
+                text-align:center;
+                border-top: 1rem solid rgba(0,0,0,.1);
+                font-size:2rem;
+                color:black;
+            }
+        
+
+
+        
+
+        
+
+    
+    </style>
+</head>
+<body>
+    <header>
+    <div class="hero">
+        <nav>
+            <a href="#" class="logo"><i class="fas-fa-utensils"></i>The Crave Bits<br></a>
+
+            <ul>
+                <li><a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\Home.html">Home</a></li>
+                <li><a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\Dishes.html">Dishes</a></li>
+                <li><a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\About.html">About</a></li>
+                <li><a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\Menu.html">Menu</a></li>
+                <li><a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\review.html">Review</a></li>
+                <li><a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\Order.html">Order</a></li>
+            </ul>
+            <a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\Menu.html" class="btn">Login</a>
+            
+
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+        <div class="content">
+            <h2>Love What You Eat!!</h2>
+            <p>Welcome to The Crave Bits, where culinary delight meets exceptional service.<br> Indulge in a world of flavors crafted from the freshest ingredients, <br>creating unforgettable dining experiences. Join us for an extraordinary journey<br> through taste and tradition.</p>
+            <a href="C:\Users\AISHWARYA\Desktop\tech\Mini project\Order.html" class="btn">Order Now</a>
+            <button class="know_more">Know More</button>
+        </div>
+    </div>
+    </header>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">India</a>
+                <a href="#">Japan</a>
+                <a href="#">Russia</a>
+                <a href="#">Usa</a>
+                <a href="#">France</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">dishes</a>
+                <a href="#">about</a>
+                <a href="#">menu</a>
+                <a href="#">review</a>
+            </div>
+
+            <div class="box">
+                <h3>contact-info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">+111-222-7890</a>
+                <a href="#">cravebits@gmail.com</a>
+                <a href="#">Chennai,India-600001</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">Linkedin</a>
+            </div>
+        </div>
+
+        <div class="credit">copyright @ 2025 by <span>Ms. AISHWARYA K</span></div>
+    </section>
+    
+</body>
+</html>
